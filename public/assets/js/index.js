@@ -36,14 +36,19 @@ var deleteNote = function(id) {
 var renderActiveNote = function() {
   $saveNoteBtn.hide();
 
+  // if activeNote has an id prop (ie...it's not empty...ie there is an extant note to display)
   if (activeNote.id) {
+    // set input and textarea to read only so the note can't be overwritten
     $noteTitle.attr("readonly", true);
     $noteText.attr("readonly", true);
+    // populate input and textarea with data from object
     $noteTitle.val(activeNote.title);
     $noteText.val(activeNote.text);
   } else {
+    // user is adding a new note. allow input and textarea to be written to
     $noteTitle.attr("readonly", false);
     $noteText.attr("readonly", false);
+    // empty out value so place holders will display until user inputs something
     $noteTitle.val("");
     $noteText.val("");
   }
@@ -83,11 +88,12 @@ var handleNoteDelete = function(event) {
 
 // Sets the activeNote and displays it
 var handleNoteView = function() {
+  // update the global object with the stored data of the li that was clicked
   activeNote = $(this).data();
   renderActiveNote();
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// Sets the activeNote to an empty object and allows the user to enter a new note
 var handleNewNoteView = function() {
   activeNote = {};
   renderActiveNote();
@@ -105,14 +111,18 @@ var handleRenderSaveBtn = function() {
 
 // Render's the list of note titles
 var renderNoteList = function(notes) {
+  // clear out container div
   $noteList.empty();
-
+  // initialize new empty array
   var noteListItems = [];
-
+  // loop over array of notes returned from db
   for (var i = 0; i < notes.length; i++) {
+    // cache note object at each iteration
     var note = notes[i];
 
+    // create li and store the json object on the element so it can be available to render when clicked on 
     var $li = $("<li class='list-group-item'>").data(note);
+    // create span and set text
     var $span = $("<span>").text(note.title);
     var $delBtn = $(
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
