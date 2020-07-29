@@ -1,0 +1,23 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "A full-stack note taking application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherConcannon/note-taker.git"
+  },
+  "author": "Christopher Concannon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopherConcannon/note-taker/issues"
+  },
+  "homepage": "https://github.com/christopherConcannon/note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
