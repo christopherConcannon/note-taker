@@ -6,7 +6,7 @@
 
 ![Note Taker](./public/assets/images/screenshot.png)
 
-
+[visit site](https://frozen-shelf-43922.herokuapp.com/)
 
 ## Description
 
@@ -22,13 +22,16 @@ A browser-based note taking application with data persistence
   * [Questions](#questions)
   
 ## Installation
-Clone project into a local directory and cd into note-taker directory.  Run npm install, then once all packages have been installed, run npm start, and verify server start message in console.  Navigate to port 3001 of your localhost to use application. 
+Clone project into a local directory and cd into note-taker directory.  Run npm install, then once all packages have been installed, run npm start, and verify server start message in console.  Navigate to port 3001 of your localhost to use application locally.
 
 ## Usage
 Add note title and body, then press disk icon to save note.  Click on any note title in the left sidebar to display the note's contents in the main display area. Click trash can icon to delete the currently loaded note.
 
 ## Technologies 
-Express.js    HTML     Bootstrap    jQuery
+Express.js    
+HTML     
+Bootstrap    
+jQuery
 
 ## License 
 This project is covered under the MIT license 
