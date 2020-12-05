@@ -2,7 +2,7 @@
 # Note Taker
 
 ## Description
-A note-taking application that allows users to create, read, update and delete notes to aid in their productivity.
+A browser-based note taking application with data persistence, that allows users to create, read, update and delete notes to aid in their productivity.
 
 ![MIT license badge](https://img.shields.io/badge/license-MIT-green)
 
@@ -12,10 +12,6 @@ A note-taking application that allows users to create, read, update and delete n
 ![Add Note View Screenshot](./assets/images/screenshot2.png)
 
 [visit site](https://note-taker-xo.herokuapp.com/)
-
-## Description
-
-A browser-based note taking application with data persistence
 
 ## Table of Contents
   * [Installation](#installation)
