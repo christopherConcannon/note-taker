@@ -3,10 +3,12 @@
 
 ![MIT license badge](https://img.shields.io/badge/license-MIT-green)
 
+##### Homescreen View
+![Homescreen View Screenshot](./assets/images/screenshot.png)
+##### Add Note View
+![Add Note View Screenshot](./assets/images/screenshot2.png)
 
-![Note Taker](./public/assets/images/screenshot.png)
-
-[visit site](https://frozen-shelf-43922.herokuapp.com/)
+[visit site](https://note-taker-xo.herokuapp.com/)
 
 ## Description
 
