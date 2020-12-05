@@ -1,6 +1,9 @@
 
 # Note Taker
 
+## Description
+A note-taking application that allows users to create, read, update and delete notes to aid in their productivity.
+
 ![MIT license badge](https://img.shields.io/badge/license-MIT-green)
 
 ##### Homescreen View
